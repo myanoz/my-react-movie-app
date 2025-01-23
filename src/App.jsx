@@ -1,9 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
-import { useState } from 'react';
-import Home from './pages/home';
-import About from './pages/About';
-
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Home from "./pages/home";
+import Search from "./pages/Search";
+import "./App.css";
 
 function App() {
   return (
@@ -11,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </Router>
     </>
